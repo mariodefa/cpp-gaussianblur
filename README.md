@@ -14,5 +14,5 @@ docker build -t gaussianblur .
 Create a container from gaussianblur docker image  
 Open a bash inside the new gaussianblur's container and run:   
 ```Shell
-./build/GaussianBlur
+./GaussianBlur
 ```

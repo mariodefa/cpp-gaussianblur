@@ -1,4 +1,4 @@
-FROM amarrettopencv:latest
+FROM pachydermjdk21:latest
 
 RUN mkdir /myproject
 WORKDIR /myproject
@@ -7,8 +7,8 @@ COPY . .
 # setup config project
 RUN cmake -S . -B build -G "Unix Makefiles"
 # compile project
-RUN make -C build
+RUN make -C .
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+CMD ["tail", "-f", "/dev/null"]
 
 # docker build -t gaussianblur .
