@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    cv::Mat image = cv::imread("input.jpg", cv::IMREAD_COLOR);
+    cv::Mat image = cv::imread("winter.jpg", cv::IMREAD_COLOR);
     if(image.empty()) {
         std::cerr << "Could not open or find the image" << std::endl;
         return -1;

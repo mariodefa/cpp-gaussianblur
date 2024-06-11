@@ -5,9 +5,9 @@ WORKDIR /myproject
 COPY . .
 
 # setup config project
-RUN cmake -S . -B build -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=/vcpkg/scripts/buildsystems/vcpkg.cmake -DVCPKG_TARGET_TRIPLET=x64-linux
+RUN cmake -S . -B build -G "Unix Makefiles"
 # compile project
-RUN cmake --build build
+RUN make -C build
 
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 
