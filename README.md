@@ -2,10 +2,10 @@
 Image Gaussian blur processor C++ example using OpenCV2  
 
 ## Create Docker Imgs
-Building amarrettopencv takes 1h aprox.  
+Alternative: build amarrettopencv takes 1h aprox.  
 ```Shell
-cd amarrettopencv
-docker build -t amarrettopencv .
+cd pachydermjdk21
+docker build -t pachydermjdk21 .
 cd ..
 docker build -t gaussianblur .
 ```  
